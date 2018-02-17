@@ -21,6 +21,6 @@ After running the program I just had to open the graphics with Photoshop/Gimp an
 
 ## The Result 
 
-IMAGE
+![result](https://raw.githubusercontent.com/henningBunk/framed10print/master/result.jpg)
 
 I am sure you can adjust the program for your specific needs. Have fun and please share the results with me :framed_picture: :+1:
