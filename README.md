@@ -8,7 +8,7 @@ This Processing for Java script solved one purpose for me and I am really happy 
 
 I have two IKEA Billy shelves next to each other, each with two IKEA Morliden glass doors which can be used as a large picture frame :framed_picture:. I wanted to put something in it but couldn't find a picture with a sufficient resolution.
 
-[This video](https://www.youtube.com/watch?v=bEyTZ5ZZxZs) inspired me to do my first Processing project.
+[This video](https://www.youtube.com/watch?v=bEyTZ5ZZxZs) inspired me to do my first [Processing](https://processing.org/) project.
 
 The program does two things:
 
@@ -21,6 +21,25 @@ After running the program I just had to open the graphics with Photoshop/Gimp an
 
 ## The Result 
 
-![result](https://raw.githubusercontent.com/henningBunk/framed10print/master/result.jpg)
+![result](./result.jpg)
 
 I am sure you can adjust the program for your specific needs. Have fun and please share the results with me :framed_picture: :+1:
+
+## Remixes
+
+### Half-height + Colors
+
+`framed10print_half_height_colors.pde` contains a remix of the original design adapted for the half-height 106cm Billy/Morliden.
+Furthermore, colors are selected at random from the palette used by the Github dark theme.
+
+![result2](./result2.jpg)
+
+The output was converted into the file format required for printing by using imagemagick:
+
+`convert door2.tif -colorspace CMYK -profile ISOcoated_v2_300_eci.icc -density 300 -units pixelsperinch door2_CMYK.pdf`
+
+and ordered from [Wir machen Druck](https://www.wir-machen-druck.de/plakat-mit-freier-groesse-einseitig-40farbig-bedruckt-topseller.html)
+as a 1-sided 378 x 954mm 135g poster for around 17 € including shipping. The color profile used can also be downloaded from that page.
+
+You can of course use any print service you like
+
